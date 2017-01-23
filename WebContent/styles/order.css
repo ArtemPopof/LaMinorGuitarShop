@@ -1,0 +1,74 @@
+.order_div {
+	box-shadow: rgb(150, 150, 150) 0px 2px 5px;
+	padding: 30px;
+	background: #ffffff;
+	text-align: center;
+	width: 700px;
+	height: 500px;
+	display: table-cell;
+	text-align: center;
+}
+
+.order_container {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	margin-top: 40px;	
+	margin-bottom: 100px;
+	display: table;
+}
+
+.account_page_black {
+	width: 150px;
+}
+
+.order_label {
+	padding: 15px;
+	font: 20px sans-serif, verdana, arial;
+	color: #2f4a48;
+	border-bottom: 1px solid #c4c4c4;
+	margin-bottom: 10px;
+	
+}
+
+.map_and_list_div {
+	margin-top: 10px;
+	display:flex;
+}
+
+.map {
+	flex: 1;
+}
+
+.market_list_div {
+	flex: 1;
+	text-align: left;
+	padding: 15px;
+}
+
+#where_take_order_label {
+	font: 15px sans-serif, verdana, arial;
+	color: #1f3a38;
+	margin-bottom: 10px;
+}
+
+#order_button {
+	margin: 10px;
+	margin-top: 140px;
+	margin-left: 100px;
+	text-align: right;
+}
+
+.standard_input {
+	padding: 5px;
+}
+
+#deliver_label {
+	font: 15px sans-serif, verdana, arial;
+	color: #1f3a38;
+	margin-bottom: 10px;
+ }
+ 
+ .delivery_div {
+ 	margin-top: 15px;
+ }

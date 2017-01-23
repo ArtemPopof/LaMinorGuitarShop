@@ -1,0 +1,79 @@
+.productListItem p {
+	margin: 0px;
+	padding: 0px;
+	color: #121212;
+	
+}
+
+.productListItem button {
+	margin: 0px;
+}
+
+.productListItem h2{
+	font: 20px sans-serif;
+	color: #2f4a48;
+}
+
+.productListItem {
+	
+	box-shadow: rgb(150, 150, 150) 0px 2px 5px;
+	background: #ffffff;
+	margin: 15px;
+	width: 300px;
+	text-align: left;
+	padding: 15px 25px;
+}
+
+.productListItem {
+	display: inline-block;
+	cursor: pointer;
+}
+
+.vendorAndImage {
+	display:inline;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+}
+
+.productImage {
+	display:inline-block;
+	margin: 0px;
+}
+
+.vendorCodeContainer {
+	display:inline-block;
+	float: left;
+	margin: 0px;
+	padding: 2px 5px;
+	font-size: 10px;
+	border: 2px solid #84a8a5;
+	border-radius: 4px;
+}
+
+.productType {
+	margin-top: 10px;
+	font-family: 'Roboto', sans-serif;
+}
+
+.productName {
+	font-family: arial;
+	font-size: 25px;
+	color: #192625;
+	text-align: center;
+	margin-top: 7px;
+	
+}
+
+.productPrice {
+	font: 27px 'Lora', Verdana, sans-serif;
+	color: #19201f;
+}
+
+.rightBlock {
+	text-align: right;
+}
+
+.availableOrNot {
+	margin-bottom: 10px;
+}

@@ -1,0 +1,167 @@
+h1 {
+	font: 25px 'Open Sans Condenced', Verdana, sans-serif;
+	color: #4d4f4e;
+}
+
+h2 {
+	font: 20px 'Open Sans Condenced', Verdana, sans-serif;
+	color: #5d5f5e;
+}
+
+#cart_label {
+	margin:50px;
+	margin-left: 150px;
+	margin-bottom: 20px
+}
+
+#empty_cart_div {
+	margin: 50px;
+	margin-left: 100px;
+}
+
+#empty_cart_div figure {
+	text-align:center;
+	margin-top: 70px;
+	margin-bottom: 80px;
+}
+
+#empty_cart_div button {
+	margin-top: 20px;
+}
+
+#empty_cart_div a {
+	text-decoration: none;
+	list-style: none;
+	color: #111511;
+	text-align: right;
+}
+
+#empty_cart_div figcapture {
+	font: 10px Verdana, sans-serif;
+	color: #111511;
+}
+
+#shopping_cart_div {
+	margin: 20px 140px;
+	margin-bottom: 80px;
+	box-shadow: rgb(150, 150, 150) 0px 2px 5px;
+	padding: 30px;
+	background: #ffffff;
+}
+
+.cart_list_item {
+	min-width:100px;
+	display:table;
+	width: 100%;
+	border-bottom: 1px solid #c4c4c4;	
+}
+
+.before_items_label {
+	padding: 15px;
+	font: 20px sans-serif, verdana, arial;
+	font-color: #2f4a48;
+	border-bottom: 1px solid #c4c4c4;
+}
+
+.list_item_name {
+	display: inline-block;
+	position: relative;
+	margin-bottom: 35px;
+}
+
+.list_item_picture, .list_item_price, .list_item_name, .delete_list_item_button, .list_touchspin {
+	vertical-align: middle;
+	display:table-cell;
+}
+
+.list_item_picture {
+	text-align: center;
+	width: 120px;
+	height: 134px;
+}
+
+.delete_list_item_button button{
+	font-size: 25px;
+	padding: 3px 5px;
+}
+
+.list_item_price {
+	width: 122px;
+}
+
+.name_with_code {
+	display:table-cell;
+	vertical-align: top;
+	padding:20px;
+	width:350px;
+}
+
+.list_item_code {
+	vertical-align: bottom;
+	padding-top:20px;
+	display: inline-block;
+	padding: 2px 5px;
+	width: auto;
+	margin-top: 20px;
+	font-size: 15px;
+	border: 2px solid #84a8a5;
+	border-radius: 4px;
+}
+
+.touchspin_input, .standard_button_inversed {
+	margin: 0px;
+}
+
+.list_touchspin {
+	width: 150px;
+}
+
+#touchspin_minus_button {
+	padding-left: 9px;
+	padding-right: 9px;
+}
+.touchspin_input {
+	width: 30px;
+	background: none;
+	border: none;
+	text-align: center;
+}
+
+.touchspin_input_div {
+	display:inline-block;
+	border-top: 1px solid #2f4a48;
+}
+
+.list_item_price {
+	text-align: left;
+	margin-left: 35px;
+	font-size: 18px;
+}
+
+.list_item_name {
+	font-size: 20px;
+}
+
+.list_item_price, .list_item_code, .list_item_name {
+	font-family: 'Lora', verdana;
+}
+
+.after_list_container {
+	padding: 20px;
+	text-align: right;
+}
+
+.total_amount_div {
+	margin-bottom: 30px;
+}
+.total_amount {
+	font: 25px 'Lora', arial, sans-serif;
+	display:inline;
+	margin-right: 100px;
+}
+
+.total_amount_value {
+	display:inline;
+	font-size: 30px;
+	color: #2f4a48
+}

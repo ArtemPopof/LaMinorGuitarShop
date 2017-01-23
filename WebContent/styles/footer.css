@@ -1,0 +1,24 @@
+body, ul, figure, p {
+	margin: 0px;
+	padding: 0px;
+}
+
+
+li {
+	list-style:none;
+	display:inline-block;
+}
+
+
+footer {
+	text-align: center;
+	padding: 60px;
+	color: #6f6a68;
+	border-top: 1px solid #cfcfcf;
+}
+
+footer a {
+	text-decoration: none;
+	list-style: none;
+	color: #111511;
+}

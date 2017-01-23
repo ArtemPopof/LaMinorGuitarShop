@@ -1,0 +1,270 @@
+body, ul, figure, p {
+	margin: 0px;
+	padding: 0px;
+}
+
+li {
+	list-style:none;
+	display:inline-block;
+}
+
+body {
+	background: #f6f6f6;
+}
+
+#logo {
+	padding: 20px;
+}
+header {
+	display:flex;
+	margin-bottom: 20px;
+	padding-top: 0px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+	background: #fefefe;
+	box-shadow: rgb(140, 140, 140) 5px 5px 6px;
+}
+
+#header_content {
+	flex: 1;
+	font-family: 'Lora', sans-serif;
+	color: #2f4a48;
+}
+
+#login_text {
+	text-align: right;
+}
+
+#lang_change {
+	text-align: right;
+}
+
+#bottom_content {
+	display: flex;
+	margin-top: 20px;
+}
+
+#city_choose {
+	margin-left: 25px;
+	padding: 5px;
+}
+
+#acc_menu_div{
+	display: none;
+}
+
+#login_div {
+	flex: 1;
+}
+
+#login_button {
+	padding: 20px;
+	background: #2f4a48;
+	color: #f3f3f3;
+	border: none;
+	margin-left: 20px;
+}
+
+#search_div {
+	flex: 7;
+	margin-left: 70px;
+	padding-left: 20px;
+	padding-top: 10px;
+	vertical-align: middle;
+}
+
+#search_div input {
+	margin: 0px;
+	border: 3px solid #2f4a48;
+	margin-left: 40px;
+	padding: 5px 10px;
+	width: 300px;
+}
+
+#cart_div {
+	display: flex;
+	flex: 2;
+	background: #a0bfbc;
+	color: #2f4a48;
+}
+
+#cart_div p, a {
+	flex: 1;
+}
+
+#where_are_we {
+	padding:10px;
+	margin-left: 20px;
+}
+
+.item_card {
+	margin: 20px 140px;
+	margin-bottom: 80px;
+	box-shadow: rgb(150, 150, 150) 0px 2px 5px;
+	padding: 30px;
+	background: #ffffff;
+}
+
+.item_card p {
+	color: #211c1c;
+}
+
+#item_card_header {
+	padding: 15px;
+	padding-left: 0px;
+	font: 20px 'Lora', Verdana, sans-serif;
+	color: #2f4a48;
+}
+
+#item_card_stars {
+	display: flex;
+	margin-bottom: 20px;
+}
+
+#stars_images {
+	margin-right: 20px;
+}
+
+#item_card_bookmarks {
+	padding: 20px;
+	margin:0px;
+}
+
+#item_card_bookmarks ul {
+	display: flex;
+
+}
+
+#item_card_bookmarks li {
+	flex: 1;
+	text-align: center;
+	border-right: 1px solid #2f4a48;
+	font: 20px 'Lora', Verdana, sans-serif;
+	color: #19302e;
+	padding: 10px;
+}
+
+#item_card_bookmarks li:hover {
+	background: #8fb0ad;
+	transition: 0.5s linear;
+}
+
+#item_card_bookmarks #short_info_bookmark {
+	background: #2f4a48;
+	color: #efefef;
+}
+
+#item_card_bookmarks li:last-of-type {
+	border-right: none;
+}
+
+#item_card_content_short, #item_card_content_full, #item_card_feedback {
+	margin-top: 15px;
+}
+
+#item_card_content_short {
+	display: flex;
+}
+
+#picture_block {
+	flex: 4;
+}
+
+#info_block {
+	flex: 6;
+	margin-left: 35px;
+}
+
+#info_block #price {
+	font: 30px 'Lora', Verdana, sans-serif;
+	color: #2f4a48;
+}
+
+#preview_block {
+	display: flex;
+	margin: 10px 0px;
+}
+
+#preview_block figure {
+	margin: 0px 5px;
+}
+
+#preview_block figure:first-of-type {
+	margin-left: 0px;
+}
+
+#preview_block figure:last-of-type {
+	margin-right: 0px;
+}
+
+#picture_block figure {
+	border: 1px solid #8fb0ad;
+}
+
+
+#button_block {
+	margin-top: 25px;
+	display: flex;
+}
+
+#button_block button {
+	padding: 10px;
+	border: 0px;
+}
+
+#add_to_cart_button {
+	margin-right: 20px;
+	background: #2f4a48;
+	color: #f3f3f3;
+}
+
+#fast_order_button {
+	background: #a0bfbc;
+	color: #2f4a48;
+}
+
+#add_to_cart_button, #fast_order_button {
+	flex: 1;
+}
+
+#info_block h2 {
+	font: 25px 'Open Sans Condenced', Verdana, sans-serif;
+	color: #2f4a48;
+}
+
+#specs_table {
+	display: flex;
+	font-family: 'Lora', sans-serif;
+}
+
+#specs_table li {
+	display: block;
+}
+
+#specs_block #values {
+	flex: 2;
+	text-align: left;
+}
+
+#specs_titles {
+	flex: 3;
+}
+
+#info_block p {
+	font-family: 'Lora', sans-serif;
+}
+
+footer {
+	text-align: center;
+	padding: 60px;
+	color: #6f6a68;
+	border-top: 1px solid #cfcfcf;
+}
+
+footer a {
+	text-decoration: none;
+	list-style: none;
+	color: #111511;
+}
+

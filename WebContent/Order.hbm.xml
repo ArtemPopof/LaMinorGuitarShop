@@ -1,0 +1,10 @@
+<hibernate-mapping>
+	<class name="com.artempopov.web.data.Order" table="orders">
+		<id column="order_id" name="orderId" type="java.lang.Long">
+			<generator class="increment"/>
+		</id>"
+		<property column="buyer" name="buyer" type="java.lang.String"/>
+		<property column="order_date" name="orderDate" type="java.util.Date"/>
+		<property column="shop_location" name="shopLocation" type="java.lang.String"/>
+	</class>
+</hibernate-mapping>

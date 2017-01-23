@@ -1,0 +1,123 @@
+body, ul, figure, p {
+	margin: 0px;
+	padding: 0px;
+}
+
+
+li {
+	list-style:none;
+	display:inline-block;
+}
+
+header {
+	display:flex;
+	background: #fefefe;
+	box-shadow: rgb(140, 140, 140) 5px 5px 6px;
+}
+
+header #logo {
+	padding: 10px;
+}
+
+#header_content {
+	margin-left: 40px;
+	text-align: center;
+	height: auto;
+	flex:1;
+}
+
+#upper_content {
+	text-align: right;
+	margin-bottom: 10px;
+	padding-right: 20px;
+	font: 15px 'Lora', sans-serif;
+	color: #2f4a48;
+	margin-bottom: 25px;
+}
+
+
+#bottom_content {
+	display: flex;
+	padding: 20px;
+}
+
+#search_div {
+	flex: 6;
+	margin-left: 100px;
+	padding: 5px 0px;
+	text-align: left;
+}
+
+#search_div input {
+	padding: 5px 10px;
+	border: none;
+	vertical-align: top;
+	border: 3px solid #2f4a48;
+	width: 300px;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+#search_div img {
+	vertical-align: bottom;
+	cursor: pointer;
+	height: 32px;
+}
+
+#country_select {
+	text-align:left;
+	flex: 2;
+
+}
+
+#country_select li {
+	cursor: pointer;
+}
+
+#country_select a {
+	text-decoration: none;
+	color: #2f4a48;
+}
+
+#cart_div {
+	flex: 1;
+	display: flex;
+}
+
+#cart_div a {
+	cursor: pointer;
+}
+
+#cart_div img {
+	margin-top: 6px;
+	vertical-align: bottom;
+}
+
+#login_div {
+	flex:1;
+}
+
+#login_button {
+	background: #2f4a48;
+	color: #f3f3f3;
+	border: none;
+	padding: 10px;
+	cursor: pointer;
+}
+
+#acc_menu_div {
+	display:none;
+}
+
+#personal_info_div a{
+	text-decoration: inherit;
+	cursor: pointer;
+	color: #2f4a48;
+}
+
+#personal_info_div {
+	padding-top: 10px;
+	vertical-align: middle;
+}
+
+

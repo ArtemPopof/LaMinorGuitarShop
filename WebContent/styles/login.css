@@ -1,0 +1,19 @@
+.login_div {
+	margin: 20px 240px;
+	margin-top: 150px;
+	margin-bottom: 80px;
+	box-shadow: rgb(150, 150, 150) 0px 2px 5px;
+	padding: 30px;
+	background: #ffffff;
+	text-align: center;
+}
+
+.login_message {
+	font: 25px 'Open Sans Condenced', Verdana, sans-serif;
+	color: #2f4a48;
+	margin-bottom: 30px;	
+}
+
+.standard_button {
+	margin-top: 20px;
+}

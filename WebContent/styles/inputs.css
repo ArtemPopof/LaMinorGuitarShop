@@ -1,0 +1,11 @@
+.standard_input {
+	background: none;
+	border: 2px solid #2f4a48;
+	padding: 8px;
+}
+
+.standard_input:hover{
+	border: 3px solid #2f4af8;
+	color: #2f4af8;
+	box-shadow: #2f4af8 0px 2px 5px;
+}

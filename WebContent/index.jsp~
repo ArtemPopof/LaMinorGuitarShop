@@ -1,0 +1,191 @@
+<%@page contentType="text/html" pageEncoding="UTF-8" %>
+<!DOCTYPE html>
+	<head>
+		<title>LaMinor Guitar Shop</title>
+		<meta charset="UTF-8"/>
+		<link rel="stylesheet" href="styles/global.css"/>
+		<link rel="icon" type="image/png" href="res/favicon.png?v=1"/>
+		<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet"> 
+	</head>
+	<body>
+		<header>
+			<figure id="logo">
+				<img src="res/logov2.png" alt="logo image" height=60 />
+			</figure>
+			<div id="header_content">
+				<div id="bottom_content">
+					<div id="search_div">
+						<input type="text" value='${tr.translate("Search")}'/>
+						<a ><img src="res/search.png" alt="search" value="Search"/></a>
+					</div>
+					<div id="country_select">
+						<ul>
+							<li><a href="/GuitarShop/main?locale=ru">ru</a></li>
+							<li><a href="/GuitarShop/main?locale=en">en</a></li>
+							<li><a href="/GuitarShop/main?locale=gr">gr</a></li>
+						</ul>
+					</div>
+					<div id="cart_div">
+						<a><img src="res/cart.png" alt="cart" width=50></a>
+					</div>
+					<div id="login_div" >
+						<button id="login_button">${tr.translate("Log In")}</button>
+					</div>
+					<div id="acc_menu_div">
+						<a><img src="res/menu.png" alt="menu"></a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div id="where_are_we">
+			<p>${tr.translate("Guitars - Electric - 6 strings")}</p>		
+		</div>
+		<section class="item_card">
+			<div id="item_card_header">
+				<h2>Fender American Deluxe Stratocaster</h2>			
+			</div>		
+			<div id="item_card_stars">
+				<div id="stars_images">
+					<img src="res/star-on.png" alt="+1"/>		
+					<img src="res/star-on.png" alt="+1"/>				
+					<img src="res/star-on.png" alt="+1"/>		
+					<img src="res/star-on.png" alt="+1"/>
+					<img src="res/star-off.png" alt="+0"/>			
+				</div>
+				<p>(20 ${tr.translate("reviews")})</p>			
+			</div>
+			<div id="item_card_bookmarks">
+			<script type="text/javascript">
+				function show_short() {
+					document.getElementById("item_card_content_short").style.display = 'flex';
+					document.getElementById("item_card_content_full").style.display = 'none';
+					document.getElementById("item_card_content_feedback").style.display = 'none';
+				}
+				
+				function show_full() {
+					document.getElementById("item_card_content_short").style.display = 'none';
+					document.getElementById("item_card_content_full").style.display = 'flex';
+					document.getElementById("item_card_content_feedback").style.display = 'none';
+				}
+				
+				function show_feedback() {
+					document.getElementById("item_card_content_short").style.display = 'none';
+					document.getElementById("item_card_content_full").style.display = 'none';
+					document.getElementById("item_card_content_feedback").style.display = 'flex';
+				}
+			</script>
+			
+				<% 	String bookmark = request.getParameter("init_bookmark");
+			
+				if (bookmark == "full") { %>
+					<script type="text/javascript">
+						document.getElementById("full_info_bookmark").click();
+					</script>
+				<%}else if (bookmark == "reviews") { %>
+					<script type="text/javascript">
+						show_feedback();
+					</script>
+				<%} %>
+				<ul>
+					<li id="short_info_bookmark" onclick="show_short()">${tr.translate("Short")}</li>
+					<li id="full_info_bookmark" onclick="show_full()">${tr.translate("Full")}</li>
+					<li id="feedback_bookmark" onclick="show_feedback()">${tr.translate("Reviews")}</li>				
+				</ul>			
+			</div>
+			<div id="item_card_content_short">
+			
+			<script type="text/javascript">
+				function showImage(index) {
+					document.getElementById("item_picture").src="res/fender"+index+".jpg";
+				}
+			</script>
+			
+				<div id="picture_block">
+					<figure>
+						<img id="item_picture" src="res/fender1.jpg" alt="fender image" width=450 />					
+					</figure>
+					<div id="preview_block">
+						<figure onclick="showImage(1)">	
+							<img src="res/fender1.jpg" alt="fender image" width=100/>		
+						</figure>	
+						<figure onclick="showImage(2)">	
+							<img src="res/fender2.jpg" alt="fender image" width=100/>		
+						</figure>
+						<figure onclick="showImage(3)">	
+							<img src="res/fender3.jpg" alt="fender image" width=100/>		
+						</figure>	
+						<figure onclick="showImage(4)">	
+							<img src="res/fender4.jpg" alt="fender image" width=100/>		
+						</figure>	
+					</div>				
+				</div>
+				<div id="info_block">
+					<p id="price"> 85 000 $</p>	
+					<div id="button_block">
+						<button id="add_to_cart_button" value="Ð ÐºÐ¾ÑÐ·Ð¸Ð½Ñ">${tr.translate("Add to cart")}</button>
+						<button id="fast_order_button" value="ÐÑÑÑÑÑÐ¹ Ð·Ð°ÐºÐ°Ð·">${tr.translate("Order now")}</button>										
+					</div>
+					<div id="review_block">
+						<h2>${tr.translate("Description")}</h2>
+						<p id="review_text">${tr.translate("product_descr")}</p>
+					</div>			
+					<div id="specs_block">
+						<h2>${tr.translate("Specifications")}</h2>	
+						<div id="specs_table">	
+						<div id="specs_titles">
+							<ul>
+								<li>${tr.translate("Type")}</li>
+								<li>${tr.translate("Manufacturer")}</li>
+								<li>${tr.translate("Made in")}</li>
+								<li>${tr.translate("Pickup's")}</li>
+								<li>${tr.translate("Color")}</li>					
+							</ul>	
+						</div>
+						<div id="values" >
+								<ul>
+									<li>${tr.translate("Electro guitar")}</li>
+									<li>Fender</li>
+									<li>${tr.translate("USA")}</li>
+									<li>${tr.translate("Single coil")}</li>
+									<li>Sunburst</li>								
+								</ul>	
+						</div>				
+						</div>			
+					</div>
+				</div>	
+			</div>
+			<div id="item_card_content_full">
+					<div id="review_block">
+						<h2>${tr.translate("Description")}</h2>
+						<p id="review_text">${tr.translate("product_descr")}</p>
+					</div>			
+					<div id="specs_block">
+						<h2>${tr.translate("Specifications")}</h2>	
+						<div id="specs_table">	
+						<div id="specs_titles">
+							<ul>
+								<li>${tr.translate("Type")}</li>
+								<li>${tr.translate("Manufacturer")}</li>
+								<li>${tr.translate("Made in")}</li>
+								<li>${tr.translate("Pickup's")}</li>
+								<li>${tr.translate("Color")}</li>					
+							</ul>	
+						</div>
+						<div id="values" >
+								<ul>
+									<li>${tr.translate("Electro guitar")}</li>
+									<li>Fender</li>
+									<li>${tr.translate("USA")}</li>
+									<li>${tr.translate("Single coil")}</li>
+									<li>Sunburst</li>								
+								</ul>	
+						</div>				
+						</div>			
+					</div>
+		</section>
+		<footer>
+			<small>Made by Artem Popov 2016&copy.</small>
+		</footer>
+	</body>
+</html>

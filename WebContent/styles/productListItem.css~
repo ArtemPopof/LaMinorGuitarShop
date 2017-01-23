@@ -1,0 +1,4 @@
+#productListItem h2{
+	font: 20px 'Lora', Verdana, sans-serif;
+	color: #2f4a48;
+}
